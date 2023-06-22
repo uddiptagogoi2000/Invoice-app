@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.sidebar {
+  width: 8rem;
+  height: 100vh;
+  background-color: #aaa;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.form {
+  width: 0;
+  overflow: hidden;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 8rem;
+  background-color: #bbb;
+  transition: 0.5s;
+}
+
+.show {
+  width: auto;
+  padding: 1rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input {
+  font-size: inherit;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eee;
+}
+
+.input-full {
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.form-group {
+  padding: 0.5rem;
+}
+
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-action {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#filter {
+  cursor: pointer;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  padding: 8px 16px;
+  gap: 8px;
+  position: absolute;
+  top: 2rem;
+  z-index: 1;
+  min-width: 150px;
+  border-radius: 8px;
+}
+
+.btn {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.btn-rounded {
+  border-radius: 999999px;
+  border: none;
+}
+
+.btn-group .btn {
+  margin-left: 1rem;
+}
+
+#list {
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 2px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.status {
+  border: 2px solid #888;
+  border-radius: 5px;
+  padding: 8px 10px;
+  width: 5rem;
+  display: inline-flex;
+  justify-content: center;
+  background-color: #bbb;
+  text-transform: capitalize;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.invoice-header .status {
+  margin-left: 1.5rem;
+}
